@@ -6,12 +6,12 @@ const path = require("path");
 if (require("electron-squirrel-startup")) app.quit();
 
 // Check for updates except for macOS
-if (process.platform != "darwin") require("update-electron-app")({ repo: "New-Club-Penguin/NewCP-App-Build" });
+if (process.platform != "darwin") require("update-electron-app")({ repo: "WaddleOnCPPS/WO-App" });
 
 const ALLOWED_ORIGINS = [
-  "https://newcp.net",
-  "https://play.newcp.net",
-  "https://appeal.newcp.net",
+  "https://waddleon.me",
+  "https://play.waddleon.me",
+  "https://legacy.waddleon.me",
 ];
 
 const pluginPaths = {
@@ -80,7 +80,7 @@ const createWindow = () => {
 
   new Promise((resolve) =>
     setTimeout(() => {
-      mainWindow.loadURL("https://newcp.net/");
+      mainWindow.loadURL("https://waddleon.me/");
       resolve();
     }, 5000)
   );
@@ -96,7 +96,7 @@ const launchMain = () => {
       mainWindow.focus();
     }
   });
-  app.setAsDefaultProtocolClient("newcp");
+  app.setAsDefaultProtocolClient("waddleon");
 
   app.whenReady().then(() => {
     createWindow();
