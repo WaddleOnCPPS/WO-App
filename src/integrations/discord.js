@@ -1,14 +1,14 @@
 const RPC = require('discord-rpc');
 const rpcClient = new RPC.Client({ transport: 'ipc' });
-const APPLICATION_ID = '793878460157788220';
+const APPLICATION_ID = '1299086874379550801';
 RPC.register(APPLICATION_ID);
 
 function onRpcReady() {
     rpcClient.setActivity({
         state: "Waddling",
-        details: "New Club Penguin",
+        details: "Waddle on",
         startTimestamp: Date.now(),
-        largeImageKey: "ncpapp",
+        largeImageKey: "woapp",
         instance: true,
     });
 }
