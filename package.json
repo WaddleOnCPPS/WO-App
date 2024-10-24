@@ -1,8 +1,8 @@
 {
-  "name": "NewCP",
-  "productName": "NewCP",
-  "version": "1.6.1",
-  "description": "NewCP App",
+  "name": "Waddle ON",
+  "productName": "Waddle ON",
+  "version": "1.0.0",
+  "description": "Waddle ON App",
   "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -15,7 +15,7 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "NewCP",
+  "author": "WaddleON",
   "license": "MIT",
   "config": {
     "forge": {
@@ -49,8 +49,8 @@
         }, {
           "name": "@electron-forge/maker-flatpak",
           "config": {
-            "genericName": "NewCP",
-            "productName": "NewCP",
+            "genericName": "WaddleON",
+            "productName": "WaddleON",
             "categories": [
               "Game"
             ],
@@ -93,12 +93,12 @@
         ]
       }
     ],
-    "appId": "com.newcp.ncp-app",
-    "productName": "NewCP",
-    "copyright": "Copyright © 2020 ${author}",
+    "appId": "com.WaddleON.wo-app",
+    "productName": "WaddleON",
+    "copyright": "Copyright © 2024 ${author}",
     "mac": {
       "icon": "./lib/icons/icon.icns",
-      "category": "lib.games.newcp"
+      "category": "lib.games.WaddleON"
     },
     "win": {
       "icon": "./lib/icons/icon.png"
@@ -107,7 +107,7 @@
       "buildResources": "lib"
     },
     "protocols": [{
-        "name": "newcp",
+        "name": "WaddleON",
         "schemes": [
           "newcp"
         ]
